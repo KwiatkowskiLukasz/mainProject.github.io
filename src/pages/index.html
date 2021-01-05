@@ -3,14 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WTF: Webpack starter kit</title>
-    <meta name="description" content="Your project description" />
+    <title>Lukasz - Portfolio</title>
+    <meta name="description" content="Lukasz Skills & Portfolio" />
     <!-- Title -->
-    <meta property="og:title" content="" />
+    <meta property="og:title" content="Lukasz - Portfolio" />
     <!-- OPTIONAL description. 2-4 sentences. -->
-    <meta property="og:description" content="" />
+    <meta property="og:description" content="Lukasz Skills & Portfolio" />
     <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
-    <meta property="og:url" content="" />
+    <meta
+      property="og:url"
+      content="https://kwiatkowskilukasz.github.io/mainProject.github.io/"
+    />
     <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
     <meta
       property="og:image"
@@ -18,9 +21,128 @@
     />
   </head>
   <body>
-    <div class="hello">
-      <img class="hello__logo" src="../assets/img/logo.svg" alt="WTF " />
-      <span class="hello__circles"></span>
-    </div>
+    <main>
+      <section class="hero">
+        <div class="hero__image--container">
+          <img class="hero__image"  src="../assets/img/xxxxx 111.png" alt="Lukasz__picture" />
+          <span>👋</span>
+        </div>
+        <div class="hero__description">
+          <h1 class="hero__header">
+            My name is Lukasz and I’m an aspiring
+            <span class="hero__special">Frontend developer</span> and a big fan
+            of cycling🚲.
+          </h1>
+          <p class="hero__paragraph">
+            You might be interested in checking the list of
+            <a class="hero__link" href="#skills">my skills</a>. Don’t forget to have a glimpse at
+            <a class="hero__link" href="#projects">my projects</a>. Currently I’m looking for a new
+            challenges so if you have one - <a class="hero__link" href="#contact">contact me</a> 😊
+          </p>
+          <a class="hero__contact" href="mailto:kwiatkovsky1999@wp.pl"
+            >kwiatkovsky1999@wp.pl</a
+          >
+        </div>
+      </section>
+      <section class="skills" id="skills">
+        <h2 class="skills__header">My skills</h2>
+        <article class="skills__section">
+          <span class="skills__section--emoji">💪</span>
+          <h3 class="skills__section--header">working knowledge</h3>
+          <ul class="skills__list">
+            <li class="skills__list--item">semantic HTML</li>
+            <li class="skills__list--item">flexbox</li>
+            <li class="skills__list--item">markdown</li>
+            <li class="skills__list--item">SASS</li>
+            <li class="skills__list--item">semantic HTML</li>
+            <li class="skills__list--item">semantic HTML</li>
+          </ul>
+        </article>
+
+        <article class="skills__section">
+          <span class="skills__section--emoji">🤔</span>
+          <h3 class="skills__section--header">know something about</h3>
+          <ul class="skills__list">
+            <li class="skills__list--item">JavaScript ES6 +features</li>
+            <li class="skills__list--item">CSS animation</li>
+            <li class="skills__list--item">Working with api</li>
+            <li class="skills__list--item">npm scripts</li>
+            <li class="skills__list--item">semantic HTML</li>
+            <li class="skills__list--item">semantic HTML</li>
+          </ul>
+        </article>
+
+        <article class="skills__section">
+          <span class="skills__section--emoji">👨‍💻</span>
+          <h3 class="skills__section--header">working knowledge</h3>
+          <ul class="skills__list">
+            <li class="skills__list--item">semantic HTML</li>
+            <li class="skills__list--item">flexbox</li>
+            <li class="skills__list--item">markdown</li>
+            <li class="skills__list--item">SASS</li>
+            <li class="skills__list--item">semantic HTML</li>
+            <li class="skills__list--item">semantic HTML</li>
+          </ul>
+        </article>
+      </section>
+      <section class="projects" id="projects">
+        <h2 class="projects__header">Recent projects</h2>
+        <p class="projects__description">
+          I started my frontend developer path in 2003. Since then, I’ve built
+          some projects. Here’s the list of the things I’ve done so far.
+        </p>
+        <div class="projects__grid">
+          <article class="project">
+            <h3 class="project__title">
+            <span>project:</span> <span>Podlaski GIT</span>
+            </h3>
+            <p>
+              <span>description:</span>
+              <span>podlaskie aliasy dla gitowych komend</span>
+            </p>
+            <p>
+              <span>demo:</span>
+              <span>&lt; <a href="#" title="Podlaski GIT - demo">see__here </a> &gt;</span>
+            </p>
+            <p>
+              <span>github:</span>
+              <span>&lt; <a href="#" title="Podlaski GIT - code">source__code </a> &gt;</span>
+            </p>
+          </article>
+          
+
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <h2 class="contact__header">Contact me</h2>
+        <p class="contact__description">I’m open for new opportunities. If you have one for me we should talk!</p>
+        <div>
+          <ul class="socials">
+            <li class="socials__github">
+              <a class="socials__link" href="https://github.com/KwiatkowskiLukasz"></a>
+              <img class="social__icon" alt="Lukasz github link">
+            </li>
+ 
+          </ul>
+          <ul class="socials">
+            <li class="socials__instagram">
+              <a class="socials__link" href="https://www.instagram.com/kwiatulaa/"></a>
+              <img class="social__icon" alt="Lukasz instagram link">
+            </li>
+ 
+          </ul>
+          <ul class="socials">
+            <li class="socials__facebook">
+              <a class="socials__link" href="https://www.facebook.com/profile.php?id=100002864582581"></a>
+              <img class="social__icon" alt="Lukasz facebook link">
+            </li>
+ 
+          </ul>
+          <a class="contact__mail" href="mailto:kwiatkovsky1999@wp.pl"
+          >kwiatkovsky1999@wp.pl</a>
+        </div>
+
+      </section>
+    </main>
   </body>
 </html>

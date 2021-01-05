@@ -1,0 +1,56 @@
+.hero {
+  padding: 74px 14px 0;
+  &__image {
+    width: 96px;
+    height: 96px;
+    top: 34px;
+    left: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__description{
+   text-align: center;
+  }
+  &__image--container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__header {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 32px;
+    text-align: center;
+    color: #234361;
+  }
+  &__special {
+    color: #4da8ff;
+  }
+  &__paragraph {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: center;
+  }
+  &__link {
+    font-weight: bold;
+    color: #4da8ff;
+    text-decoration: none;
+  }
+  &__contact {
+    display: inline-block;
+    padding: 4px 24px;
+    background: #4da8ff;
+    border-radius: 64px;
+    text-decoration: none;
+    color: white;
+    font-family: Nunito;
+    font-style: Bold;
+    font-size: 20px;
+  }
+}
