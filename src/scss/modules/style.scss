@@ -1,5 +1,5 @@
 .skills {
-    background-color: #4da8ff;
+    background: #1070CA;
     color: white;
     
   &__header {
@@ -24,4 +24,43 @@
     font-size: 64px;
     line-height: 72px;
   }
+  &__section--header{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 44px;
+  }
+  &__list{
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    list-style-type: none;
+    width: 288px;
+    &--item {
+      padding: 0 0 0 24px;
+      margin: 0 0 12px;
+      position: relative;
+      &:before {
+        position: absolute;
+        left: 0px;
+        top: 7px;
+        content: '';
+        width: 12px;
+        height: 9px;
+        background: url('/src/assets/img/small-tick-green.svg');
+        display: block;
+        .skills__list--blue &{
+          background: url('/src/assets/img/small-tick-blue.svg');
+        }
+        .skills__list--bullet &{
+          width: 12px;
+          height: 9px;
+          background: url('/src/assets/img/Bullet.svg');
+        }
+
+      }
+    }
+  }
+
 }
