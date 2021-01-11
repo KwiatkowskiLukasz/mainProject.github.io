@@ -48,15 +48,15 @@
         content: '';
         width: 12px;
         height: 9px;
-        background: url('/src/assets/img/small-tick-green.svg');
+        background: url('../assets/img/small-tick-green.svg');
         display: block;
         .skills__list--blue &{
-          background: url('/src/assets/img/small-tick-blue.svg');
+          background: url('../assets/img/small-tick-blue.svg');
         }
         .skills__list--bullet &{
           width: 12px;
           height: 9px;
-          background: url('/src/assets/img/Bullet.svg');
+          background: url('../assets/img/Bullet.svg');
         }
 
       }
