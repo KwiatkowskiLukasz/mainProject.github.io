@@ -10,6 +10,16 @@
     line-height: 48px;
     text-align: center;
     padding: 24px;
+    @media (min-width: $desktop){
+      font-size: 48px;
+      line-height: 58px;
+    }
+  }
+  &__columns{
+    @media (min-width: $desktop){
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
   }
   &__section{
     display: flex;

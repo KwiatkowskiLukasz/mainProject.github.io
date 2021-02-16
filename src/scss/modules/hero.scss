@@ -5,6 +5,10 @@
     max-width: 768px;
     margin: 0 auto;
   }
+  @media (min-width: $desktop) {
+    max-width: 100%;
+    margin: 0 auto;
+  }
   &__image {
     width: 96px;
     height: 96px;
@@ -13,11 +17,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    @media (min-width: $desktop){
+    @media (min-width: $desktop) {
       width: 178px;
-    height: 178px;
-    border: 24px solid #f6f9fd;
-    border-radius: 50%;
+      height: 178px;
+      border: 24px solid #f6f9fd;
+      border-radius: 50%;
     }
   }
   &__hello {
@@ -39,12 +43,36 @@
         display: block;
         width: 17.42px;
         height: 22.66px;
-        background: url('../assets/img/speech_cloud.svg');
+        background: url("../assets/img/speech_cloud.svg");
       }
     }
   }
   &__description {
     text-align: center;
+    @media (min-width: $desktop) {
+      max-width: 786px;
+      padding-top: 26px;
+      padding-bottom: 176px;
+      min-height: 100%;
+      margin: 0 auto;
+      position: relative;
+      &::before, &::after {
+        position: absolute;
+        width: 82.94px;
+        height: 254.88px;
+        content: "";
+        display: block;
+        top: 0;
+      }
+      &::before {
+        background: url('../assets/img/left.svg');
+        right: 100%;
+      }
+      &::after {
+        background: url('../assets/img/right.svg');
+        left: 100%;
+      }
+    }
   }
   &__image--container {
     display: flex;
@@ -52,10 +80,10 @@
     justify-content: center;
     position: relative;
   }
-  &__cloud{
+  &__cloud {
     position: absolute;
     left: calc(50% + 98px);
-top: -26px
+    top: -26px;
   }
   &__header {
     font-family: Nunito;
