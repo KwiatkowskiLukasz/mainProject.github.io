@@ -62,3 +62,12 @@
 
     }
 }
+.projects-grid{
+    display: grid;
+    column-gap: 24px;
+    row-gap: 24px;
+    grid-template-columns: 1fr 1fr;
+    @media (min-width: $tablet) {
+        
+    }
+}

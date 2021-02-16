@@ -1,5 +1,10 @@
 .hero {
   padding: 74px 14px 0;
+  text-align: center;
+  @media (min-width: $tablet) {
+    max-width: 768px;
+    margin: 0 auto;
+  }
   &__image {
     width: 96px;
     height: 96px;
@@ -8,14 +13,49 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @media (min-width: $desktop){
+      width: 178px;
+    height: 178px;
+    border: 24px solid #f6f9fd;
+    border-radius: 50%;
+    }
   }
-  &__description{
-   text-align: center;
+  &__hello {
+    display: none;
+    @media (min-width: $desktop) {
+      background: #1070ca;
+      border-radius: 16px;
+      display: block;
+      color: #fff;
+      padding: 16px 19px;
+      font-size: 32px;
+      font-weight: bold;
+      position: relative;
+      &:after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 32px;
+        display: block;
+        width: 17.42px;
+        height: 22.66px;
+        background: url('../assets/img/speech_cloud.svg');
+      }
+    }
+  }
+  &__description {
+    text-align: center;
   }
   &__image--container {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+  }
+  &__cloud{
+    position: absolute;
+    left: calc(50% + 98px);
+top: -26px
   }
   &__header {
     font-family: Nunito;
@@ -27,7 +67,7 @@
     color: #234361;
   }
   &__special {
-    color: #1070CA;
+    color: #1070ca;
   }
   &__paragraph {
     font-family: Nunito;
