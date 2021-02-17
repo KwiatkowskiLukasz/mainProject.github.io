@@ -19,6 +19,10 @@
     color: #425A70;
     margin: 16px;
     padding: 16px;
+    @media ( min-width: $desktop) {
+     font-size: 20px;
+     line-height: 40px;
+    }
   }
   &__mail{
     color: #fff;
@@ -31,16 +35,18 @@
     background: #4DA8FF;
     border-radius: 64px;
     text-decoration: none;
-    margin-bottom: 88px;
 
   }
 }
 .socials{
     padding: 30px 10px 45px 10px;
-    display: flex;
-        align-items: center;
-        justify-content: center;
-
+    @media (min-width: $desktop){
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0 auto;
+      max-width: 650px;
+    }
     &__link{
         padding: 0px;
         width: 48px;
@@ -52,16 +58,17 @@
         border-radius: 50%;
         box-shadow: 0px 4px 8px rgba(16, 112, 202, 0.15);
     }
-    &__link{
-        text-align: center;
-    }
-    &__item{
-        padding: 0;
-        margin: 64px 54px;
-
+    &__box{
+      padding: 0px;
+      display: flex;
+      justify-content: center;
+      margin: 56px 40px 64px 0px;
+      @media ( min-width: $desktop) {
+        display: flex;
+      }
     }
     &__media{
         list-style-type: none;
        
     }
-}
+  }
