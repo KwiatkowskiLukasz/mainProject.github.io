@@ -2,9 +2,7 @@ import "../scss/main.scss";
 
 console.log("HELLO 🚀");
 
-fetch(
-  `https://api.github.com/users/KwiatkowskiLukasz/repos?sort=created&direction=asc`
-)
+fetch(`https://api.github.com/users/KwiatkowskiLukasz/repos?sort=created&direction=asc`)
   .then((res) => res.json())
   .then((res) => {
     const container = document.querySelector(`.projects-grid__js`);
@@ -54,12 +52,15 @@ fetch(
           >
         </p>
       </div>
-    </article>
+     </article>
+     `;
+       if (description){
+        container.innerHTML += template;
+       }; 
     
-       `;
-
-      container.innerHTML += template;
+    
     }
-  })
-
-  .catch((e) => console.log(e));
+console.log(res);
+             
+})
+ .catch((e) => console.log(e));
