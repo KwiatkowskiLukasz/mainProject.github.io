@@ -8,7 +8,22 @@
 @import "modules/style.scss";
 @import "modules/projects.scss";
 @import "modules/contact.scss";
+@import "modules/hand.scss";
 
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
 
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family:  Nunito;
+    color: rgb(35, 67, 97);;
+}
 
 
